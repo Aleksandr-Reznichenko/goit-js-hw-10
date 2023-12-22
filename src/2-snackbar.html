@@ -21,7 +21,44 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <a class="link" href="./index.html">Go back</a>
+    <a class="link backdown" href="./index.html">Go back</a>
+
+    <form class="form">
+      <div class="form-delay">
+        <label class="form-delay-label">
+          Delay (ms)
+          <input class="form-delay-input" type="number" name="delay" required />
+        </label>
+
+        <fieldset class="form-state">
+          <legend>State</legend>
+          <div class="form-state-label">
+            <label>
+              <input
+                class="form-state-input"
+                type="radio"
+                name="state"
+                value="fulfilled"
+                required
+              />
+              Fulfilled
+            </label>
+            <label>
+              <input
+                class="form-state-input"
+                type="radio"
+                name="state"
+                value="rejected"
+                required
+              />
+              Rejected
+            </label>
+          </div>
+        </fieldset>
+      </div>
+
+      <button class="form-button" type="submit">Create notification</button>
+    </form>
 
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
