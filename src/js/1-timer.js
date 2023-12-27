@@ -71,7 +71,7 @@ function onclick() {
 }
 
 function selectDate() {
-  const now = new Date().getTime();
+  const now = Date.now();
   const distance = endDate.getTime() - now;
 
   return distance < 0 ? 0 : distance;
